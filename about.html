@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+</head>
+<body>
+
+<h1>MY PORTFOLIO</h1>
+
+<nav class="navbar">
+    <ul>
+        <a href="home.html">HOME</a>
+        <a href="project.html">MY PROJECT</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="contact.html">CONTACT</a>
+    </ul>
+</nav>
+
+
+<div class="about-section">
+    <div class="about-container">
+        <div class="about-image-side">
+            <img src="kits.jpg" alt="Kits Rea" class="about-profile-image">
+        </div>
+        <div class="about-content-side">
+            <h2 class="about-greeting">Hi! I'm Kits Rea</h2>
+            <div class="about-description">
+                <p>I love playing volleyball and trying out different foods. I am a family-oriented, kind, and loving person. I enjoy learning new things, creating projects, and helping others whenever I can.</p>
+            </div>
+            <div class="about-details">
+                <div class="detail-item">
+                    <span class="detail-label">Interests:</span> Volleyball, Food Exploration
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Values:</span> Family-oriented, Kind, Loving
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Passions:</span> Learning, Creating, Helping Others
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #060606;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #ff00bbf0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: rgb(12, 11, 11);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #010101;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.about-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-side {
+    flex: 1;
+    text-align: right;
+}
+
+.about-profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff00bbf0;
+    box-shadow: 0px 4px 15px rgba(255, 0, 187, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.about-profile-image:hover {
+    transform: scale(1.05);
+}
+
+.about-content-side {
+    flex: 1.2;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.about-greeting {
+    font-size: 36px;
+    color: #ff00bbf0;
+    margin: 0 0 20px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.about-description {
+    margin-bottom: 25px;
+}
+
+.about-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.about-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #ff00bbf0;
+}
+
+.detail-item {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #ff00bbf0;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    .about-image-side {
+        text-align: center;
+    }
+    
+    .about-content-side {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .about-greeting {
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .about-description p {
+        text-align: center;
+    }
+    
+    .about-profile-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-details {
+        text-align: left;
+    }
+}
+</style>
+</body>
+</html>
